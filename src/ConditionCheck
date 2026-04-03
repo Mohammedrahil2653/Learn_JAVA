@@ -1,0 +1,12 @@
+public class PlayingCat {
+    public static void main(String[]args){
+        System.out.println("The cat playing is "+isCatPlaying(true,45));
+         System.out.println("The cat playing is "+isCatPlaying(false,18));
+    }
+ 
+    public static boolean isCatPlaying(boolean summer, int temperature) {
+        
+        int max = summer ? 45 : 35;
+        return temperature >= 25 && temperature <= max;
+    }
+}
